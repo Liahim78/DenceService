@@ -7,8 +7,6 @@ namespace DanceServiceModel.Entities
     public  class Journal
     {
         public int Id { get; set; }
-        public int IdUser { get; set; }
-        public int IdTraining { get; set; }
         public bool Visit { get; set; }
         public bool Protect { get; set; }
     

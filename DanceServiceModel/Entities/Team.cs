@@ -6,7 +6,6 @@ namespace DanceServiceModel.Entities
     
     public  class Team
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Team()
         {
             this.Features = new HashSet<Feature>();

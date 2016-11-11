@@ -8,7 +8,6 @@ namespace DanceServiceModel.Entities
     
     public  class User
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
             this.Features = new HashSet<Feature>();
@@ -30,7 +29,7 @@ namespace DanceServiceModel.Entities
         public string Stiles { get; set; }
         public string Password { get; set; }
         public string Info { get; set; }
-        public Nullable<System.DateTime> Birthday { get; set; }
+        public DateTime? Birthday { get; set; }
         public string Phone { get; set; }
         public string email { get; set; }
     

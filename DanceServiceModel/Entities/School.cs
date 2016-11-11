@@ -6,7 +6,6 @@ namespace DanceServiceModel.Entities
     
     public  class School
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public School()
         {
             this.Features = new HashSet<Feature>();
@@ -20,10 +19,9 @@ namespace DanceServiceModel.Entities
         public string City { get; set; }
         public string Country { get; set; }
         public string Adress { get; set; }
-        public int IdDanceCentre { get; set; }
         public string Links { get; set; }
     
-        public virtual DanceService DanceService { get; set; }
+        public virtual DanceCenter DanceService { get; set; }
         public virtual ICollection<Feature> Features { get; set; }
         public virtual ICollection<Timetable> Timetables { get; set; }
         public virtual ICollection<User> Users { get; set; }

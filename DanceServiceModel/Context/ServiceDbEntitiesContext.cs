@@ -15,7 +15,7 @@ namespace DanceServiceModel.Context
     
        
     
-        public virtual DbSet<DanceService> DanceCenters { get; set; }
+        public virtual DbSet<DanceCenter> DanceCenters { get; set; }
         public virtual DbSet<Feature> Features { get; set; }
         public virtual DbSet<Journal> Journals { get; set; }
         public virtual DbSet<Meeting> Meetings { get; set; }

@@ -6,14 +6,12 @@ namespace DanceServiceModel.Entities
     
     public  class Training
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Training()
         {
             this.Journals = new HashSet<Journal>();
         }
     
         public int Id { get; set; }
-        public int IdTimetable { get; set; }
         public System.DateTime TimeStart { get; set; }
         public System.DateTime TimeEnd { get; set; }
     
