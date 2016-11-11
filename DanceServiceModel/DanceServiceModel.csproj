@@ -50,7 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Context\ModelDanceServiceContext.cs" />
+    <Compile Include="Context\DanceServiceInitializer.cs" />
+    <Compile Include="Context\ServiceDbEntitiesContext.cs" />
     <Compile Include="Entities\DanceService.cs" />
     <Compile Include="Entities\Feature.cs" />
     <Compile Include="Entities\Journal.cs" />
@@ -61,10 +62,6 @@
     <Compile Include="Entities\Timetable.cs" />
     <Compile Include="Entities\Training.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\UserMeeting.cs" />
-    <Compile Include="Entities\UserSchool.cs" />
-    <Compile Include="Entities\UserTeam.cs" />
-    <Compile Include="Entities\UserTimetable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

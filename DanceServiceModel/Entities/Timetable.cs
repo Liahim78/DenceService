@@ -10,7 +10,7 @@ namespace DanceServiceModel.Entities
         public Timetable()
         {
             this.Trainings = new HashSet<Training>();
-            this.UserTimetables = new HashSet<UserTimetable>();
+            this.Users = new HashSet<User>();
         }
     
         public int Id { get; set; }
@@ -22,9 +22,8 @@ namespace DanceServiceModel.Entities
         public virtual Meeting Meeting { get; set; }
         public virtual School School { get; set; }
         public virtual Team Team { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
         public virtual ICollection<Training> Trainings { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserTimetable> UserTimetables { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

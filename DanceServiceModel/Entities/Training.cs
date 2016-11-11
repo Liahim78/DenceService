@@ -17,7 +17,6 @@ namespace DanceServiceModel.Entities
         public System.DateTime TimeStart { get; set; }
         public System.DateTime TimeEnd { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Journal> Journals { get; set; }
         public virtual Timetable Timetable { get; set; }
     }

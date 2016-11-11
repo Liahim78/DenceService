@@ -12,11 +12,10 @@ namespace DanceServiceModel.Entities
             this.Features = new HashSet<Feature>();
             this.Journals = new HashSet<Journal>();
             this.Subscribes = new HashSet<Subscribe>();
-            this.Subscribes1 = new HashSet<Subscribe>();
-            this.UserMeetings = new HashSet<UserMeeting>();
-            this.UserSchools = new HashSet<UserSchool>();
-            this.UserTeams = new HashSet<UserTeam>();
-            this.UserTimetables = new HashSet<UserTimetable>();
+            this.Meetings = new HashSet<Meeting>();
+            this.Schools = new HashSet<School>();
+            this.Teams = new HashSet<Team>();
+            this.Timetables = new HashSet<Timetable>();
         }
     
         public int Id { get; set; }
@@ -32,21 +31,12 @@ namespace DanceServiceModel.Entities
         public string Phone { get; set; }
         public string email { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Feature> Features { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Journal> Journals { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Subscribe> Subscribes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Subscribe> Subscribes1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserMeeting> UserMeetings { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserSchool> UserSchools { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserTeam> UserTeams { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<UserTimetable> UserTimetables { get; set; }
+        public virtual ICollection<Meeting> Meetings { get; set; }
+        public virtual ICollection<School> Schools { get; set; }
+        public virtual ICollection<Team> Teams { get; set; }
+        public virtual ICollection<Timetable> Timetables { get; set; }
     }
 }
