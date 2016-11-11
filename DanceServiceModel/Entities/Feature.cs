@@ -1,4 +1,6 @@
 
+using System.ComponentModel.DataAnnotations;
+
 namespace DanceServiceModel.Entities
 {
     using System;
@@ -9,6 +11,7 @@ namespace DanceServiceModel.Entities
         public int Id { get; set; }
         public Nullable<int> IdUser { get; set; }
         public Nullable<int> IdSchool { get; set; }
+       
         public Nullable<int> IdTeam { get; set; }
         public Nullable<int> IdMeeting { get; set; }
         public string UrlVideoContent { get; set; }
