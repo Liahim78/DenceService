@@ -23,7 +23,7 @@ namespace DanceServiceModel.Entities
         public int IdDanceCentre { get; set; }
         public string Links { get; set; }
     
-        public virtual DanceCenter DanceCenter { get; set; }
+        public virtual DanceService DanceService { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Feature> Features { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -3,10 +3,10 @@ namespace DanceServiceModel.Entities
     using System;
     using System.Collections.Generic;
     
-    public  class DanceCenter
+    public  class DanceService
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DanceCenter()
+        public DanceService()
         {
             this.Schools = new HashSet<School>();
         }

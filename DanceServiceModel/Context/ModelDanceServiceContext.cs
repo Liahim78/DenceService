@@ -6,19 +6,16 @@ using DanceServiceModel.Entities;
 namespace DanceServiceModel.Context
 {
     
-    public class CommunityBDEntities : DbContext
+    public class ServiceDbEntities : DbContext
     {
-        public CommunityBDEntities()
-            : base("name=CommunityBDEntities")
+        public ServiceDbEntities()
+            : base("DanceServiceContext")
         {
         }
     
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
+       
     
-        public virtual DbSet<DanceCenter> DanceCenters { get; set; }
+        public virtual DbSet<DanceService> DanceCenters { get; set; }
         public virtual DbSet<Feature> Features { get; set; }
         public virtual DbSet<Journal> Journals { get; set; }
         public virtual DbSet<Meeting> Meetings { get; set; }
