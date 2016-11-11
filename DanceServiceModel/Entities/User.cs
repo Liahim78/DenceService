@@ -1,4 +1,6 @@
 
+using System.ComponentModel.DataAnnotations;
+
 namespace DanceServiceModel.Entities
 {
     using System;
@@ -20,6 +22,7 @@ namespace DanceServiceModel.Entities
         }
     
         public int Id { get; set; }
+        [MaxLength(50)]
         public string Name { get; set; }
         public string LastName { get; set; }
         public string Nick { get; set; }
