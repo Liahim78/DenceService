@@ -10,7 +10,6 @@ namespace DanceServiceModel.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "DanceServiceModel.Context.ServiceDbEntities";
         }
 
         protected override void Seed(DanceServiceModel.Context.ServiceDbEntities context)
